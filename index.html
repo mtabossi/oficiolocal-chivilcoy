@@ -200,6 +200,7 @@
     { id: 'Sanitarios', label: 'Sanitarios' },
     { id: 'Herramientas', label: 'Herramientas' },
     { id: 'Electricidad', label: 'Electricidad' },
+    { id: 'Taller mecánico', label: 'Taller mecánico' },
     { id: 'Otros', label: 'Otros' }
   ];
 
@@ -296,7 +297,7 @@
   }
 
   function trackWhatsapp(nombre) {
-    gtag('event', 'click_whatsapp', { nombre: nombre });
+    gtag('event', 'click_whatsapp', { 'Profesional': nombre });
   }
 
   function cortarTexto(texto, limite) {
